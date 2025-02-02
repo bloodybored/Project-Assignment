@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    background-color: gainsboro;
+    background-image: url(bgg.jpg);
+    
+    
+}
+h1 { 
+    font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+  font-size: 70px;
+  color: azure;
+}
+
+#images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+}
+
+#images {
+    position: relative;
+}
+
+img {
+    border-radius: 25px;
+}
+
+/* img:hover {
+    transform: scale(1.1);
+    filter: blur(5px);
+    
+    
+} */
+
+
+.first:hover img, .second:hover img, .third:hover img , .fourth:hover img, .fifth:hover img, .sixth:hover img  {
+    transform: scale(1.1);
+    filter: blur(5px);
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.first:hover .text, .fourth:hover .text, .second:hover .text, .third:hover .text, .fifth:hover .text, .sixth:hover .text  {
+    opacity:1;
+    transition: 0.5s;
+    
+}
+
+.first, .second,.third,.fourth,.fifth,.sixth  {
+    position: relative;
+}
+
+
+.text {
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
